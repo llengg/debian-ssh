@@ -8,7 +8,7 @@ RUN apt-get update && \
     
 RUN mkdir -p /var/run/sshd &&\
     echo "root:123456" | chpasswd &&\
-    mkdir -p /root/data
+    mkdir -p /root/data &&\
     cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
     
 VOLUME  ["/root/data"]
