@@ -1,5 +1,5 @@
 #!/bin/bash
 
-  echo "root:$ROOT_PASS" | chpasswd
+echo "root:$ROOT_PASS" | chpasswd
   
-exec /usr/sin/sshd -D
+exec sshd -D
