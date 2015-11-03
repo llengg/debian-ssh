@@ -2,4 +2,4 @@
 
 echo "root:$ROOT_PASS" | chpasswd
   
-exec sshd -D
+exec /usr/sbin/sshd -D
